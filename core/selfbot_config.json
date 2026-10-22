@@ -1,0 +1,17 @@
+{
+  "nitro_sniper": false,
+  "auto_responder": false,
+  "triggers": {},
+  "logger": false,
+  "dm_logger": false,
+  "ghost_mode": false,
+  "ghost_delay": 5,
+  "status_rotator": false,
+  "statuses": [],
+  "anti_spam": false,
+  "reaction_adder": false,
+  "reaction_emoji": "✅",
+  "reaction_channel": null,
+  "typing_loop": false,
+  "typing_channel": ""
+}
