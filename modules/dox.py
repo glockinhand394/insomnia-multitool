@@ -262,7 +262,7 @@ def dox_tracker():
             ln, fn = get_inpt("last_name:"), get_inpt("first_name:")
             q = f"{ln} {fn}".replace(" ", "%20")
             print(Colorate.Horizontal(cl["head"], "\n  [+] Searching..."))
-            for u in [f"https://www.facebook.com/search/top/?q={q}", f"https://www.peekyou.com/{ln}_{fn}"]:
+            for u in [f"https://www.facebook.com/search/top/?q={q}", f"https://thatsthem.com/{ln}_{fn}"]:
                 try: webbrowser.open(u)
                 except: pass
             input(Colorate.Horizontal(cl["head"], "\n  Press Enter..."))
