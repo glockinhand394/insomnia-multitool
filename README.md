@@ -107,7 +107,7 @@ Navi offers a variety of themes to suit your aesthetic, including the new **Mode
 1.  **Clone the Repository**
     ```bash
     git clone https://github.com/glockinhand394/insomnia-multitool.git
-    cd navi-multitool
+    cd insomnia-multitool
     ```
 
 2.  **Run Installation**
@@ -127,8 +127,8 @@ This tool is developed for **educational and ethical security testing purposes o
 ---
 
 ## 🔗 Stay Connected
-- **Main Developer**: [glockinhand](https://github.com/glockinhand)
-- **Community Discord**: [Join the Server](https://discord.com/invite/4DFNP2VJKPW)
+- **Main Developer**: [glockinhand](https://github.com/glockinhand394)
+- **Community Discord**: [Join the Server](https://discord.com/invite/officialinsomnia)
 
 <p align="center">
   <i>"Present Day, Present Time... Hahaha!"</i>
