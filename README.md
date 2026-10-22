@@ -127,7 +127,7 @@ This tool is developed for **educational and ethical security testing purposes o
 ---
 
 ## 🔗 Stay Connected
-- **Main Developer**: [glockinhand](https://github.com/glockinhand394)
+- **Main Developer**: [glockinhand394](https://github.com/glockinhand394)
 - **Community Discord**: [Join the Server](https://discord.com/invite/officialinsomnia)
 
 <p align="center">
