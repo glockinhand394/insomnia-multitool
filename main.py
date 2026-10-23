@@ -357,6 +357,11 @@ def run_app():
         p_name = PAGES[current_page]['title'].split()[0].lower()
         _c_raw = get_inpt(f"insomina@root/{p_name}:~#").strip()
         _c = _c_raw.lower()
+
+        if _c in {"h", "?"}:
+            from core.help_menu import show_help
+            show_help()
+            continue
         
         if _c in ["a", "p"]:
             current_page = (current_page - 1) % len(PAGES)
