@@ -179,9 +179,9 @@ HELP_PAGES = [
                 ("65", "Proxy Checker"),
             ]),
             ("CONFIG SUBMENU (61)", [
-                ("1-12", "Select a theme: Blue, Red, Purple, Green, Yellow, Pink, Cyan, Gray, Rainbow, Modern, Modern Red, Modern Purple"),
-                ("13", "Toggle Auto-Update"),
-                ("14", "Toggle Discord Popup"),
+                ("1-13, 16", "Select a theme: Blue, Red, Purple, Green, Yellow, Pink, Cyan, Gray, Rainbow, Modern, Modern Red, Modern Purple, Insomnia, Monochrome"),
+                ("14", "Toggle Auto-Update"),
+                ("15", "Toggle Discord Popup"),
                 ("99", "Return to the main menu"),
             ]),
         ],

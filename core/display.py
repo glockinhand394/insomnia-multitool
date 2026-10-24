@@ -16,7 +16,7 @@ import time
 import json
 import random
 import shutil
-from core.themes import THEMES
+from core.themes import INSOMNIA_ASCII, THEMES
 from core.modern_ui import ModernUI
 
 user = os.environ.get('USERNAME', 'Unknown') if os.name == 'nt' else os.environ.get('USER', 'Unknown')
@@ -74,7 +74,7 @@ class Theme:
     def get_matrix_color():
         c = get_config().get("theme", "blue").lower()
         if c == "rainbow": return -1
-        m = {"red":196,"purple":93,"green":46,"yellow":226,"pink":201,"cyan":51,"gray":245,"blue":27, "modern_red":196, "modern_purple":93}
+        m = {"red":196,"purple":93,"green":46,"yellow":226,"pink":201,"cyan":51,"gray":245,"blue":27, "modern_red":196, "modern_purple":93, "insomnia":51, "monochrome":245}
         return m.get(c, 27)
 
 def clr():
@@ -110,13 +110,7 @@ def type_print(text, delay=0.03):
     sys.stdout.write("\n")
 
 def boot_anim():
-    pic = """
-##### #...# .#### .###. #...# #...# ##### .###.
-..#.. ##..# #.... #...# ##.## ##..# ..#.. #...#
-..#.. #.#.# .###. #...# #.#.# #.#.# ..#.. #####
-..#.. #..## ....# #...# #...# #..## ..#.. #...#
-##### #...# ####. .###. #...# #...# ##### #...#
-    """
+    pic = "\n".join(INSOMNIA_ASCII)
     cols = Theme.get_colors()
     for _ in range(2):
         clr()
@@ -176,13 +170,7 @@ def print_banner():
         return ModernUI.print_banner(Colorate, Theme, clr)
     clr()
     cols = Theme.get_colors()
-    logo = """
-##### #...# .#### .###. #...# #...# ##### .###.
-..#.. ##..# #.... #...# ##.## ##..# ..#.. #...#
-..#.. #.#.# .###. #...# #.#.# #.#.# ..#.. #####
-..#.. #..## ....# #...# #...# #..## ..#.. #...#
-##### #...# ####. .###. #...# #...# ##### #...#
-    """
+    logo = "\n".join(INSOMNIA_ASCII)
     print(Colorate.Horizontal(cols["banner"], Center.XCenter(logo)))
     print(Colorate.Horizontal(cols["sub"], Center.XCenter("\n~ Present Day, Present Time ~")))
     print("\n")

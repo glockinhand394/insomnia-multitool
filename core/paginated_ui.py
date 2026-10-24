@@ -12,7 +12,6 @@ import os
 import sys
 import shutil
 import re
-import random
 
 try:
     import psutil
@@ -20,6 +19,7 @@ except ImportError:
     psutil = None
 
 from core.display import Theme, Colorate, Colors, clr, get_config
+from core.themes import INSOMNIA_ASCII
 
 
 PAGES = [
@@ -467,34 +467,7 @@ class PaginatedUI:
     @classmethod
     def draw_logo(cls, colors):
         if cls.ACTIVE_LOGO is None:
-            banners = [
-                [
-                    r" _____   ___  _   _  ___  _   _  ____  _____  ___  ___ ",
-                    r"|_   _| / _ \| \ | |/ _ \| \ | |/ ___||_   _||_ _||_ _|",
-                    r"  | |  | | | |  \| || | | |  \| |\___ \  | |  | |  | |  ",
-                    r"  | |  | |_| | |\  || |_| | |\  | ___) | | |  | |  | |  ",
-                    r"  |_|   \___/|_| \_|\___/|_| \_||____/  |_|  |___||___|",
-                    r"                                                    ",
-                ],
-                [
-                    r"██████╗ ███████╗███╗   ██╗████████╗███████╗██████╗ ███████╗",
-                    r"██╔══██╗██╔════╝████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝",
-                    r"██████╔╝█████╗  ██╔██╗ ██║   ██║   █████╗  ██████╔╝█████╗  ",
-                    r"██╔══██╗██╔══╝  ██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗██╔══╝  ",
-                    r"██║  ██║███████╗██║ ╚████║   ██║   ███████╗██║  ██║███████╗",
-                    r"╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝",
-                ],
-                [
-                    r" _____  ____  ____  _   _  ____  _____  ___  ___  ___ ",
-                    r"|_   _||  _ \|  _ \| | | ||  _ \|_   _||_ _||_ _||_ _|",
-                    r"  | |  | |_) | |_) | |_| || |_) | | |  | |  | |  | |  ",
-                    r"  | |  |  _ <|  _ <|  _  ||  _ < | |  | |  | |  | |  ",
-                    r"  |_|  |_| \_\_| \_\_|_| |_||_| \_\_|_|  |___||___||___|",
-                    r"                                                     ",
-                ],
-            ]
-
-            cls.ACTIVE_LOGO = random.choice(banners)
+            cls.ACTIVE_LOGO = INSOMNIA_ASCII
 
         logo_lines = cls.ACTIVE_LOGO
 

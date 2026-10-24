@@ -3,7 +3,7 @@
   "version": "2.7.1",
   "author": "InsomniaServices",
   "discord": "https://discord.gg/officialinsomnia",
-  "theme": "purple",
-  "auto_open_discord": false,
+  "theme": "monochrome",
+  "auto_open_discord": true,
   "auto_update": true
 }

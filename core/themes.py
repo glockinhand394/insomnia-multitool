@@ -10,6 +10,14 @@
 
 from pystyle import Colors
 
+INSOMNIA_ASCII = (
+    "##### #...# .#### .###. #...# #...# ..#.. .###.",
+    "..#.. ##..# #.... #...# ##.## ##..# ..#.. #...#",
+    "..#.. #.#.# .###. #...# #.#.# #.#.# ..#.. #####",
+    "..#.. #..## ....# #...# #...# #..## ..#.. #...#",
+    "##### #...# ####. .###. #...# #...# ##### #...#",
+)
+
 THEMES = {
     "blue": {
         "banner": Colors.white_to_blue,
@@ -106,5 +114,21 @@ THEMES = {
         "txt": Colors.white,
         "sub": Colors.blue_to_purple,
         "inp": Colors.blue_to_purple
+    },
+    "insomnia": {
+        "banner": Colors.purple_to_blue,
+        "head": Colors.cyan_to_blue,
+        "num": Colors.purple_to_blue,
+        "txt": Colors.white,
+        "sub": Colors.cyan_to_blue,
+        "inp": Colors.cyan
+    },
+    "monochrome": {
+        "banner": Colors.gray,
+        "head": Colors.gray,
+        "num": Colors.gray,
+        "txt": Colors.white,
+        "sub": Colors.gray,
+        "inp": Colors.white
     }
 }

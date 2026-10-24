@@ -72,7 +72,8 @@ def cfg_mgr():
         _p()
 
         _tl = [("1","Blue"),("2","Red"),("3","Purple"),("4","Green"),("5","Yellow"),("6","Pink"),
-               ("7","Cyan"),("8","Gray"),("9","Rainbow"),("10","Modern"),("11","Modern Red"),("12","Modern Purple")]
+               ("7","Cyan"),("8","Gray"),("9","Rainbow"),("10","Modern"),("11","Modern Red"),
+               ("12","Modern Purple"),("13","Insomnia"),("16","Monochrome")]
         col_w = inner // 3
         for _i in range(0, len(_tl), 3):
             _ln = ""
@@ -90,8 +91,8 @@ def cfg_mgr():
         _div()
         _p()
         half = inner // 2
-        c1_key = "  [13] "; c1_lbl = "Auto-Update:  "; c1_val = f"{au_status}"
-        c2_key = "  [14] "; c2_lbl = "Discord Popup:"; c2_val = f" {dp_status}"
+        c1_key = "  [14] "; c1_lbl = "Auto-Update:  "; c1_val = f"{au_status}"
+        c2_key = "  [15] "; c2_lbl = "Discord Popup:"; c2_val = f" {dp_status}"
         c1_plain = c1_key + c1_lbl + c1_val
         c2_plain = c2_key + c2_lbl + c2_val
         c1_pad = half - len(c1_plain)
@@ -124,8 +125,8 @@ def cfg_mgr():
         print(mg + Colorate.Horizontal(_cl["head"], "└" + "─" * inner + "┘"))
 
         _c = get_inpt("insomina@config:~#")
-        if _c in [str(_x) for _x in range(1, 13)]:
-            _tm = {"1":"blue","2":"red","3":"purple","4":"green","5":"yellow","6":"pink","7":"cyan","8":"gray","9":"rainbow","10":"modern","11":"modern_red","12":"modern_purple"}[_c]
+        if _c in [str(_x) for _x in range(1, 14)] or _c == "16":
+            _tm = {"1":"blue","2":"red","3":"purple","4":"green","5":"yellow","6":"pink","7":"cyan","8":"gray","9":"rainbow","10":"modern","11":"modern_red","12":"modern_purple","13":"insomnia","16":"monochrome"}[_c]
             try:
                 with open("core/config.json", "r") as _f: _d = json.load(_f)
                 _d["theme"] = _tm
@@ -133,10 +134,10 @@ def cfg_mgr():
                 print(Colorate.Horizontal(_cl["head"], f"  [+] Theme -> {_tm.upper()}"))
                 matrix_effect(1, Theme.get_matrix_color())
             except: pass
-        elif _c in ["13", "14"]:
+        elif _c in ["14", "15"]:
             try:
                 with open("core/config.json", "r") as _f: _d = json.load(_f)
-                _k = "auto_update" if _c == "13" else "auto_open_discord"
+                _k = "auto_update" if _c == "14" else "auto_open_discord"
                 _d[_k] = not _d.get(_k, 1)
                 with open("core/config.json", "w") as _f: json.dump(_d, _f, indent=2)
                 print(Colorate.Horizontal(_cl["head"], f"  [+] {_k} is now {_d[_k]}"))

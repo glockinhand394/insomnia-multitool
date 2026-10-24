@@ -84,7 +84,7 @@
 ---
 
 ## 🎨 Professional Themes
-Navi offers a variety of themes to suit your aesthetic, including the new **Modern** series:
+Insomnia offers a variety of themes to suit your aesthetic, including the **Modern** series, the purple/cyan **Insomnia** theme, and the grayscale **Monochrome** theme:
 
 <p align="center">
   <img src="https://i.ibb.co/35hcVSy4/image1.png" width="24%" />
@@ -93,7 +93,7 @@ Navi offers a variety of themes to suit your aesthetic, including the new **Mode
   <img src="https://i.ibb.co/KjB7zKRm/image.png" width="24%" />
 </p>
 
-`Modern` | `Modern Red` | `Modern Purple` | `Rainbow` | `Blue` | `Red` | `Purple` | `Green` | `Yellow`
+`Insomnia` | `Monochrome` | `Modern` | `Modern Red` | `Modern Purple` | `Rainbow` | `Blue` | `Red` | `Purple` | `Green` | `Yellow`
 
 ---
 
@@ -122,7 +122,7 @@ Navi offers a variety of themes to suit your aesthetic, including the new **Mode
 ---
 
 ## ⚠️ Disclaimer
-This tool is developed for **educational and ethical security testing purposes only**. The developer is not responsible for any misuse or damage caused by this application. Use Navi responsibly and within legal boundaries.
+This tool is developed for **educational and ethical security testing purposes only**. The developer is not responsible for any misuse or damage caused by this application. Use Insomnia responsibly and within legal boundaries.
 
 ---
 
