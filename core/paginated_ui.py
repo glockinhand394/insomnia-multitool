@@ -108,7 +108,8 @@ PAGES = [
             ("62", "Disable Antivirus", "Add C drive to Defender exclusions"),
             ("63", "Windows Debloater", "Launch Windows Utility to debloat and optimize OS"),
             ("64", "Proxy Scraper", "Scrape HTTP, SOCKS4, and SOCKS5 proxies"),
-            ("65", "Proxy Checker", "Test scraped proxies for latency and validity")
+            ("65", "Proxy Checker", "Test scraped proxies for latency and validity"),
+            ("66", "Zip Bomb", "Create a zip bomb file to crash extraction tools"),
         ]
     }
 ]

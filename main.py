@@ -28,6 +28,7 @@ from modules.osint import whois_lookup, dns_lookup
 from modules.malicious import mail_bomb
 from modules.obfuscator import obfuscator_init
 from modules.metadata import metadata_init
+from modules.zipbomb import zipbomb_menu
 
 def cfg_mgr():
     from core.paginated_ui import PaginatedUI
@@ -587,6 +588,8 @@ def run_app():
         elif _c == "65":
             from modules.proxychecker import proxy_checker_menu
             proxy_checker_menu()
+        elif _c == "66":
+            zipbomb_menu()
         elif _c == "99": sys.exit(0)
 
 if __name__ == '__main__':

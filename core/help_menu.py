@@ -177,6 +177,7 @@ HELP_PAGES = [
                 ("63", "Windows Debloater - launches the external WinUtil script"),
                 ("64", "Proxy Scraper"),
                 ("65", "Proxy Checker"),
+                ("66", "Zip Bomb Generator"),
             ]),
             ("CONFIG SUBMENU (61)", [
                 ("1-13, 16", "Select a theme: Blue, Red, Purple, Green, Yellow, Pink, Cyan, Gray, Rainbow, Modern, Modern Red, Modern Purple, Insomnia, Monochrome"),
